@@ -8,7 +8,6 @@
 .title-h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-weight: 700;
     cursor: default;
 }
@@ -40,7 +39,6 @@ h2 {
     margin-top: -15px;
     font-size: 2em;
     margin-bottom: 5px;
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-weight: 700;
     cursor: default;
 }
@@ -48,7 +46,6 @@ h2 {
 p {
     font-size: 1.1em;
     margin: 0;
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-weight: 600;
     cursor: default;
 }

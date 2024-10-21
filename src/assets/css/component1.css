@@ -1,5 +1,5 @@
 .component1-container {
-    padding: 20px;
+    padding: 40px;
     max-width: 1200px;
     margin: auto;
 }
@@ -7,7 +7,7 @@
 .component1-title-1,
 .component1-title-2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     cursor: default;
 }
 
@@ -15,9 +15,11 @@
     font-size: 2.3rem;
 }
 
+
+
 .component1-content {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     cursor: default;
 }
 
@@ -25,14 +27,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .component1-column {
     flex: 1;
     min-width: 250px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 9px;
     text-align: left;
@@ -43,10 +45,12 @@
     font-size: 1.3rem;
     text-align: center;
     cursor: default;
+    margin-bottom: 10px;
 }
 
 .component1-column p {
     font-size: 0.9rem;
+    line-height: 1.5;
     cursor: default;
 }
 
@@ -55,28 +59,19 @@
     transform: translateY(-5px);
 }
 
-.component1-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
 .component1-icon-column {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 100%; 
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .component1-icon {
     max-width: 250px;
     height: auto;
-}
-
-.component1-icon-column:hover {
-    background-color: transparent;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.122);
 }
 
 

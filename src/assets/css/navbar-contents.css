@@ -4,9 +4,11 @@
     background-color: #44403D;
     padding: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the buttons */
+    margin-top: 200px;
+    position: relative;
+    z-index: 9;
 }
-
 
 .nav-button {
     background: none;
@@ -15,8 +17,11 @@
     font-size: 14px;
     cursor: pointer;
     position: relative;
-    padding: 10px 15px;
+    padding: 10px 30px; /* Adjusted padding */
+    margin: 0; /* No margin */
 }
+
+
 
 .nav-button::after {
     content: '';

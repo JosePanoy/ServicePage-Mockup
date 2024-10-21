@@ -63,8 +63,7 @@ function Component1() {
                 </animated.div>
                 <animated.div style={fadeInLeft3} className="component1-column">
                     <h3>International Exposure</h3>
-                    <p>To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, 
-                    China.apr.com, Caimeiju, Juwai, Country Life UK</p>
+                    <p>To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, China.apr.com, Caimeiju, Juwai, Country Life UK</p>
                 </animated.div>
             </div>
             <div className="component1-row">

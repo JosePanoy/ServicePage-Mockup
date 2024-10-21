@@ -48,7 +48,7 @@ function Component9() {
                         By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
                     </label>
                 </div>
-                <button class="button-30" role="button">Subscribe</button>
+                <button className="button-30" role="button">Subscribe</button>
             </div>
             <div className="item-6">
                 <div className="logos-6">

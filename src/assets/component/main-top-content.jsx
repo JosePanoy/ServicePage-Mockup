@@ -8,6 +8,7 @@ import SearchIcon from "../img/search-icon.png";
 import MainLogo from "../img/mainlogo.png";
 import NavbarContents from "./navbar-contents";
 import SidePanel from "./side-panel";
+import MainBackgroundPic from "../img/main.jpg";
 
 function MainTopContent() {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +20,6 @@ function MainTopContent() {
     threshold: 0.1,
   });
 
-  // Animations
   const fadeInFromTopH3 = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView ? 'translateY(0)' : 'translateY(-50px)',
@@ -46,7 +46,7 @@ function MainTopContent() {
     transform: inView ? 'translateY(0)' : 'translateY(-50px)',
     config: { duration: 800, easing: easings.linear },
     delay: 700,
-});
+  });
 
   const toggleNavbar = () => {
     setNavbarVisible(!isNavbarVisible);
@@ -82,7 +82,7 @@ function MainTopContent() {
   }, [isSidePanelVisible]);
 
   return (
-    <div ref={ref} className="main-top-content-wrapper">
+    <div ref={ref} className="main-top-content-wrapper" style={{ backgroundImage: `url(${MainBackgroundPic})` }}>
       <nav className="main-top-navbar">
         <img src={MainLogo} alt="Main Logo" className="main-top-logo" />
         <img
@@ -113,18 +113,18 @@ function MainTopContent() {
         />
       </animated.div>
       <animated.div className="appointment-button-container" style={fadeInFromTopAppointment}>
-    <button className="appointment-button">
-        Book an Appointment
-        <img
+        <button className="appointment-button">
+          Book an Appointment
+          <img
             src={ArrowIcon}
             alt="Arrow Icon"
             className="appointment-arrow"
-        />
-          </button>
+          />
+        </button>
       </animated.div>
 
       {isNavbarVisible && (
-        <div className="navbar-contents-container visible">
+        <div  className="navbar-contents-container visible">
           <NavbarContents />
         </div>
       )}

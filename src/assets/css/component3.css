@@ -81,12 +81,11 @@
         font-size: 0.8rem;
     }
 
-    .component3-box h2 {
-        margin-bottom: -5px;
-    }
+
 
     .component3-box {
         padding: 5px 10px;
+        margin: 20px 0; 
     }
 
     .component3-container {

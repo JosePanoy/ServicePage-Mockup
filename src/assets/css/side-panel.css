@@ -1,0 +1,36 @@
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #44403D;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 10;
+}
+
+.side-panel.visible {
+    transform: translateX(-250px);
+    opacity: 1;
+}
+
+.panel-button {
+    margin-top: 70px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 15px;
+}
+
+
+.main-top-toggle-icon {
+    position: relative;
+    z-index: 20;
+}

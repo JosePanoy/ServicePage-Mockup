@@ -1,0 +1,148 @@
+.unique-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+.unique-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.image-large {
+    grid-column: span 2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-large img {
+    width: 40%;
+    height: auto;
+}
+
+.image-small {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-small img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.text-content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-content h2 {
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.small-logo {
+    width: 130px;
+    height: auto;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    .unique-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        margin-top: 50px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .image-large {
+        grid-column: span 1; 
+    }
+
+    .image-small:nth-of-type(1) {
+        grid-column: span 1;
+    }
+
+    .text-content:nth-of-type(1) {
+        grid-column: span 1; 
+    }
+
+    .image-small:nth-of-type(2) {
+        grid-column: span 1;
+    }
+
+    .text-content:nth-of-type(2) {
+        grid-column: span 1; 
+    }
+
+    .image-small:nth-of-type(3) {
+        grid-column: span 1; 
+    }
+
+    .text-content:nth-of-type(3) {
+        grid-column: span 1; 
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .unique-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+        margin-top: 50px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+  
+    .image-large {
+        grid-column: span 2;
+    }
+
+    .image-small:nth-of-type(1) {
+        grid-column: span 1; 
+    }
+
+    .image-small:nth-of-type(2) {
+        grid-column: span 1; 
+    }
+
+    .text-content:nth-of-type(1) {
+        grid-column: span 2;
+    }
+
+    .image-small:nth-of-type(3) {
+        grid-column: span 2; 
+    }
+
+    .text-content:nth-of-type(2) {
+        grid-column: span 2; 
+    }
+
+    .text-content:nth-of-type(3) {
+        grid-column: span 2; 
+    }
+}

@@ -1,0 +1,119 @@
+.component1-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.component1-title-1,
+.component1-title-2 {
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.component1-title-1 {
+    font-size: 2.3rem;
+}
+
+.component1-content {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.component1-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.component1-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    text-align: left;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.component1-column h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: default;
+}
+
+.component1-column p {
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+.component1-column:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.122);
+    transform: translateY(-5px);
+}
+
+.component1-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.component1-icon-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.component1-icon {
+    max-width: 250px;
+    height: auto;
+}
+
+.component1-icon-column:hover {
+    background-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.122);
+}
+
+
+@media (max-width: 768px) {
+    .component1-title-1 {
+        font-size: 1.8rem;
+    }
+
+    .component1-title-2 {
+        font-size: 1.8rem;
+    }
+
+    .component1-content {
+        font-size: 1rem;
+    }
+
+    .component1-column {
+        margin: 5px;
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .component1-title-1 {
+        font-size: 1.8rem;
+    }
+
+    .component1-title-2 {
+        font-size: 1.2rem;
+    }
+
+    .component1-content {
+        font-size: 0.9rem;
+    }
+
+    .component1-column {
+        margin: 5px;
+        flex: 1 1 100%;
+    }
+}

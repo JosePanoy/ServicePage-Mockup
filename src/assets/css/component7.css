@@ -1,0 +1,105 @@
+.marketing-container {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.title-h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-weight: 700;
+    cursor: default;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px; 
+}
+
+.image-box {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+
+}
+
+.marketing-img {
+    width: 30%;
+    height: auto;
+    max-width: 80%;
+    margin-bottom: 10px;
+
+}
+
+h2 {
+    margin-top: -15px;
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-weight: 700;
+    cursor: default;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 0;
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-weight: 600;
+    cursor: default;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    .marketing-container{
+        margin-top: 80px;
+    }
+    
+    .title-h1 {
+        font-size: 1.3em;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .title-h1 {
+        font-size: 1.8em;
+    }
+
+    .image-row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image-box {
+        max-width: 45%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

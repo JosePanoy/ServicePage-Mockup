@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto auto auto;
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
 
 }
 
@@ -65,7 +65,7 @@
 }
 
 .small-logo {
-    width: 130px;
+    width: 100px;
     height: auto;
 }
 

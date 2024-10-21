@@ -1,9 +1,9 @@
 import React from 'react';
-import "../css/side-panel.css";
+import "../css/slide-bar.css";
 
-function SidePanel({ isVisible, toggleVisibility }) {
+function SlideBar() {
     return (
-        <div className={`side-panel ${isVisible ? 'visible' : ''}`} onClick={toggleVisibility}>
+        <div className="custom-slidebar-container">
             <button className="custom-slidebar-button">Meet the Team</button>
             <button className="custom-slidebar-button">Search for Homes</button>
             <button className="custom-slidebar-button">Our Communities</button>
@@ -16,4 +16,4 @@ function SidePanel({ isVisible, toggleVisibility }) {
     );
 }
 
-export default SidePanel;
+export default SlideBar;
